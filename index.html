@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Scratch Project ✨</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=DynaPuff&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/style/global.css"/>
+</head>
+<body>
+    <!-- Nav-Start -->
+
+    <div class="nav">
+        <div class="nav-name">
+            <span class="name">Roadside Bistro</span>
+        </div>
+        <div class="nav-section-a">
+            <a href="/" class="nav-a">Home</a>
+            <a href="#about" class='nav-a'>About</a>
+            <a href="#menu" class='nav-a'>Menu</a>
+            <a href="#location" class='nav-a'>Location</a>
+        </div>
+        <div class="nav-btn">
+            <a href="#reserve"><button class="btn">Reserve Now</button></a>
+        </div>
+    </div>
+
+    <!-- Nav-End -->
+
+    <!-- Hero-Start -->
+
+    <div class="hero">
+        
+    </div>
+
+    <!-- Hero-End -->
+
+    <!-- About-Start -->
+
+    <div id="about">
+        <div class="features">
+            <div class="feature-item">
+              <i class="fas fa-utensils"></i>
+              <h3>Fine Cuisine</h3>
+              <p>Expertly crafted dishes using the finest ingredients</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-wine-glass-alt"></i>
+              <h3>Premium Bar</h3>
+              <p>Extensive selection of wines and craft cocktails</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-map-marked-alt"></i>
+              <h3>Easy Access</h3>
+              <p>Conveniently located with ample parking space</p>
+            </div>
+        </div>
+    </div>
+      
+
+    <!-- About-End -->
+
+    <!-- Menu-Start -->
+
+    <div class="container" id="menu">
+        <h1><span>Our Signature Dishes</span></h1>
+        <div class="head">
+            <div class="card">
+                <img src="./src/img/img.png" alt="Avatar" class="menu-icon">
+                <div class="wrapper">
+                  <span>Prime Ribeeye Steak</span>
+                  <p class="sub-text">28-day aged beef with truffle butter</p>
+                  <p class="price">$45</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/img/img1.png" alt="Avatar" class="menu-icon">
+                <div class="wrapper">
+                  <span>Seafood Linguine</span>
+                  <p class="sub-text">Freah seafood in white wine sauce</p>
+                  <p class="price">$32</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/img/img2.png" alt="Avatar" class="menu-icon">
+                <div class="wrapper">
+                  <span>Chocolate Symphony</span>
+                  <p class="sub-text">Valrhona chocolate with gold leaf</p>
+                  <p class="price">$18</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu-End -->
+
+    <!-- Reserve-Start -->
+    
+    <section class="reservation-section" id="reserve">
+        <h2>Make a Reservation</h2>
+        <form class="reservation-form">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Number">
+          <select>
+            <option>Select Time</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+          </select>
+          <select>
+            <option>Number of Guests</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4+</option>
+          </select>
+          <button type="submit">Reserve Table</button>
+        </form>
+    </section>
+
+    <!-- Reserve-End -->
+
+    <!-- Location-Start -->
+
+    <section class="find-us" id="location">
+        <div class="find-us-text">
+          <h2>Find Us</h2>
+          <p>
+            Located conveniently off Highway 101, our restaurant offers easy access and ample parking for our guests.
+          </p>
+          <ul class="contact-info">
+            <li><i class="fa-solid fa-location-dot"></i> 123 Highway Drive, Luxury Lane</li>
+            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fa-solid fa-clock"></i> Open Daily: 17:00 - 23:00</li>
+          </ul>
+        </div>
+        <div class="find-us-img">
+          <img src="./src/img/img3.png" alt="Restaurant Image">
+        </div>
+    </section>
+
+    <!-- Location-End -->
+
+    <!-- Footer-Start -->
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Roadside Bistro</h4>
+            <p>Luxury dining experience on the highway</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Reservations</a></li>
+              <li><a href="#">Private Events</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>123 Highway Drive<br>Luxury Lane<br>+1 (555) 123-4567</p>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          &copy; 2025 Roadside Bistro. All rights reserved.
+        </div>
+    </footer>
+      
+
+    <!-- Footer-End -->
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
