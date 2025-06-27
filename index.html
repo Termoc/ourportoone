@@ -1,190 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porto 1</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadside Bistro - Luxury Dining Experience</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=DynaPuff&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/style/global.css"/>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DynaPuff&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/style/global.css" />
+  </head>
+  <body>
     <!-- Nav-Start -->
-
-    <div class="nav">
-        <div class="nav-name">
-            <span class="name">Roadside Bistro</span>
-        </div>
-        <div class="nav-section-a">
-            <a href="/" class="nav-a">Home</a>
-            <a href="#about" class='nav-a'>About</a>
-            <a href="#menu" class='nav-a'>Menu</a>
-            <a href="#location" class='nav-a'>Location</a>
-        </div>
-        <div class="nav-btn">
-            <a href="#reserve"><button class="btn">Reserve Now</button></a>
-        </div>
+    <div class="nav" id="navbar">
+      <div class="nav-name">
+        <span class="name">Roadside Bistro</span>
+      </div>
+      <div class="nav-section-a" id="navMenu">
+        <a href="#home" class="nav-a">Home</a>
+        <a href="#about" class="nav-a">About</a>
+        <a href="#menu" class="nav-a">Menu</a>
+        <a href="#location" class="nav-a">Location</a>
+      </div>
+      <div class="nav-btn">
+        <a href="#reserve"><button class="btn">Reserve Now</button></a>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-
     <!-- Nav-End -->
 
     <!-- Hero-Start -->
-
-    <div class="hero">
-        
+    <div class="hero" id="home">
+      <div class="hero-content loading">
+        <h1>Luxury Dining Experience</h1>
+        <p>Savor exquisite cuisine in an elegant roadside setting</p>
+      </div>
     </div>
-
     <!-- Hero-End -->
 
     <!-- About-Start -->
-
     <div id="about">
-        <div class="features">
-            <div class="feature-item">
-              <i class="fas fa-utensils"></i>
-              <h3>Fine Cuisine</h3>
-              <p>Expertly crafted dishes using the finest ingredients</p>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-wine-glass-alt"></i>
-              <h3>Premium Bar</h3>
-              <p>Extensive selection of wines and craft cocktails</p>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-map-marked-alt"></i>
-              <h3>Easy Access</h3>
-              <p>Conveniently located with ample parking space</p>
-            </div>
+      <div class="features">
+        <div class="feature-item loading">
+          <i class="fas fa-utensils"></i>
+          <h3>Fine Cuisine</h3>
+          <p>
+            Expertly crafted dishes using the finest ingredients sourced from
+            local farms and international markets
+          </p>
         </div>
+        <div class="feature-item loading">
+          <i class="fas fa-wine-glass-alt"></i>
+          <h3>Premium Bar</h3>
+          <p>
+            Extensive selection of wines and craft cocktails curated by our
+            master sommelier
+          </p>
+        </div>
+        <div class="feature-item loading">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Easy Access</h3>
+          <p>
+            Conveniently located with ample parking space and valet service
+            available
+          </p>
+        </div>
+      </div>
     </div>
-      
-
     <!-- About-End -->
 
     <!-- Menu-Start -->
-
     <div class="container" id="menu">
-        <h1><span>Our Signature Dishes</span></h1>
-        <div class="head">
-            <div class="card">
-                <img src="./src/img/img.png" alt="Avatar" class="menu-icon">
-                <div class="wrapper">
-                  <span>Prime Ribeeye Steak</span>
-                  <p class="sub-text">28-day aged beef with truffle butter</p>
-                  <p class="price">$45</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./src/img/img1.png" alt="Avatar" class="menu-icon">
-                <div class="wrapper">
-                  <span>Seafood Linguine</span>
-                  <p class="sub-text">Freah seafood in white wine sauce</p>
-                  <p class="price">$32</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./src/img/img2.png" alt="Avatar" class="menu-icon">
-                <div class="wrapper">
-                  <span>Chocolate Symphony</span>
-                  <p class="sub-text">Valrhona chocolate with gold leaf</p>
-                  <p class="price">$18</p>
-                </div>
-            </div>
+      <h1><span>Our Signature Dishes</span></h1>
+      <div class="head">
+        <div class="card loading">
+          <img
+            src="src/img/img.png"
+            alt="Prime Ribeye Steak"
+            class="menu-icon"
+          />
+          <div class="wrapper">
+            <span>Prime Ribeye Steak</span>
+            <p class="sub-text">
+              28-day aged beef with truffle butter and seasonal vegetables
+            </p>
+            <p class="price">$45</p>
+          </div>
         </div>
+        <div class="card loading">
+          <img
+            src="src/img/img1.png"
+            alt="Seafood Linguine"
+            class="menu-icon"
+          />
+          <div class="wrapper">
+            <span>Seafood Linguine</span>
+            <p class="sub-text">
+              Fresh seafood in white wine sauce with garden herbs
+            </p>
+            <p class="price">$32</p>
+          </div>
+        </div>
+        <div class="card loading">
+          <img
+            src="src/img/img2.png"
+            alt="Chocolate Symphony"
+            class="menu-icon"
+          />
+          <div class="wrapper">
+            <span>Chocolate Symphony</span>
+            <p class="sub-text">
+              Valrhona chocolate with gold leaf and berry compote
+            </p>
+            <p class="price">$18</p>
+          </div>
+        </div>
+      </div>
     </div>
-
     <!-- Menu-End -->
 
     <!-- Reserve-Start -->
-    
     <section class="reservation-section" id="reserve">
-        <h2>Make a Reservation</h2>
-        <form class="reservation-form">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Number">
-          <select>
-            <option>Select Time</option>
-            <option>12:00 PM</option>
-            <option>1:00 PM</option>
-            <option>2:00 PM</option>
-          </select>
-          <select>
-            <option>Number of Guests</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4+</option>
-          </select>
-          <button type="submit">Reserve Table</button>
-        </form>
+      <h2>Make a Reservation</h2>
+      <form class="reservation-form" id="reservationForm">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <select required>
+          <option value="">Select Time</option>
+          <option value="12:00">12:00 PM</option>
+          <option value="13:00">1:00 PM</option>
+          <option value="14:00">2:00 PM</option>
+          <option value="19:00">7:00 PM</option>
+          <option value="20:00">8:00 PM</option>
+          <option value="21:00">9:00 PM</option>
+        </select>
+        <select required>
+          <option value="">Number of Guests</option>
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5+">5+ Guests</option>
+        </select>
+        <button type="submit">Reserve Table</button>
+      </form>
     </section>
-
     <!-- Reserve-End -->
 
     <!-- Location-Start -->
-
     <section class="find-us" id="location">
-        <div class="find-us-text">
-          <h2>Find Us</h2>
-          <p>
-            Located conveniently off Highway 101, our restaurant offers easy access and ample parking for our guests.
-          </p>
-          <ul class="contact-info">
-            <li><i class="fa-solid fa-location-dot"></i> 123 Highway Drive, Luxury Lane</li>
-            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fa-solid fa-clock"></i> Open Daily: 17:00 - 23:00</li>
-          </ul>
-        </div>
-        <div class="find-us-img">
-          <img src="./src/img/img3.png" alt="Restaurant Image">
-        </div>
+      <div class="find-us-text">
+        <h2>Find Us</h2>
+        <p>
+          Located conveniently off Highway 101, our restaurant offers easy
+          access and ample parking for our guests. Experience luxury dining in
+          an elegant atmosphere.
+        </p>
+        <ul class="contact-info">
+          <li>
+            <i class="fa-solid fa-location-dot"></i> 123 Highway Drive, Luxury
+            Lane
+          </li>
+          <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+          <li><i class="fa-solid fa-clock"></i> Open Daily: 17:00 - 23:00</li>
+          <li><i class="fa-solid fa-envelope"></i> info@roadsidebistro.com</li>
+        </ul>
+      </div>
+      <div class="find-us-img">
+        <img src="src/img/img3.png" alt="Restaurant Interior" />
+      </div>
     </section>
-
     <!-- Location-End -->
 
     <!-- Footer-Start -->
-
     <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>Roadside Bistro</h4>
-            <p>Luxury dining experience on the highway</p>
+      <div class="footer-waves">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-section footer-brand">
+            <div class="brand-logo">
+              <h4>Roadside Bistro</h4>
+              <div class="brand-tagline">Fine Dining Excellence</div>
+            </div>
+            <p class="brand-description">
+              Where culinary artistry meets exceptional service. Experience the
+              pinnacle of gastronomic excellence in our luxury roadside
+              destination.
+            </p>
+            <div class="awards">
+              <div class="award-item">
+                <i class="fas fa-star"></i>
+                <span>Michelin Recommended</span>
+              </div>
+              <div class="award-item">
+                <i class="fas fa-trophy"></i>
+                <span>Fine Dining Award 2024</span>
+              </div>
+            </div>
           </div>
+
           <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Reservations</a></li>
-              <li><a href="#">Private Events</a></li>
+            <h4>Culinary Experience</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#menu"
+                  ><i class="fas fa-utensils"></i>Signature Menu</a
+                >
+              </li>
+              <li>
+                <a href="#reserve"
+                  ><i class="fas fa-calendar-alt"></i>Private Dining</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-wine-glass-alt"></i>Wine Collection</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-gift"></i>Gift Vouchers</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-users"></i>Group Events</a>
+              </li>
             </ul>
           </div>
+
           <div class="footer-section">
-            <h4>Contact</h4>
-            <p>123 Highway Drive<br>Luxury Lane<br>+1 (555) 123-4567</p>
+            <h4>Guest Services</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#reserve"
+                  ><i class="fas fa-concierge-bell"></i>Reservations</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-car"></i>Valet Parking</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-wheelchair"></i>Accessibility</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-shield-alt"></i>Safety Protocols</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-headset"></i>Concierge</a>
+              </li>
+            </ul>
           </div>
-          <div class="footer-section">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+          <div class="footer-section footer-contact">
+            <h4>Connect With Us</h4>
+            <div class="contact-luxury">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Location</strong>
+                  <p>
+                    123 Highway Drive, Luxury Lane<br />Premium District, State
+                    12345
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>Reservations</strong>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Tuesday - Sunday: 17:00 - 23:00<br />Monday: Closed</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p>reservations@roadsidebistro.com</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <hr>
-        <div class="footer-bottom">
-          &copy; 2025 Roadside Bistro. All rights reserved.
-        </div>
-    </footer>
-      
 
+        <div class="footer-social-section">
+          <div class="social-container">
+            <h5>Follow Our Journey</h5>
+            <div class="social-icons-luxury">
+              <a href="#" class="social-link" data-platform="facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="#" class="social-link" data-platform="instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="#" class="social-link" data-platform="twitter">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+              <a href="#" class="social-link" data-platform="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-link" data-platform="youtube">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="newsletter-section">
+            <h5>Exclusive Updates</h5>
+            <p>
+              Subscribe to receive invitations to special events and seasonal
+              menu updates
+            </p>
+            <form class="newsletter-form" id="newsletterForm">
+              <div class="input-group">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider">
+        <div class="divider-ornament">
+          <i class="fas fa-gem"></i>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <div class="copyright">
+            <p>&copy; 2025 Roadside Bistro. All rights reserved.</p>
+            <p class="tagline">
+              Crafted with passion for culinary excellence since 2020
+            </p>
+          </div>
+          <div class="footer-links-bottom">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+          </div>
+          <div class="footer-badges">
+            <div class="badge-item">
+              <i class="fas fa-certificate"></i>
+              <span>Certified Organic</span>
+            </div>
+            <div class="badge-item">
+              <i class="fas fa-leaf"></i>
+              <span>Sustainable Sourcing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Footer-End -->
 
-    <script src="./src/js/index.js"></script>
-</body>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="src/style/script.js"></script>
+  </body>
 </html>
